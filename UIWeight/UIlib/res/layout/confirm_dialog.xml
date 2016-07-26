@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="3dip"
+        android:gravity="center|left"
+        android:text="\t\t东部战区支援枞阳防汛工作的十二军部队200余人驻扎在陈瑶湖镇中心学校。8日7时43分，陈瑶湖镇镇长周巨飞根据陈瑶湖流域防汛抗旱指挥部命令，打电话给镇党政办主任周巨龙，要求周巨龙带领东部战区的十二军部队从陈瑶湖镇中心学校后面的小路赶往横埠河南岸参与抗洪抢险，周巨龙个人认为带领部队从大街上行走可以扩大影响."
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/gainsboro"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/gainsboro"></View>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/green"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
