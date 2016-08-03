@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import android.view.Menu;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +17,7 @@ import android.widget.Toast;
 import com.csdn.Weight.Dialog.BasicDialogFragment;
 import com.csdn.Weight.Dialog.ConfirmDialog;
 import com.csdn.Weight.Dialog.GoodAlertDialog;
+import com.csdn.Weight.Dialog.LayDialog;
 import com.csdn.Weight.Spinner.ListPopWindow;
 import com.csdn.Weight.Spinner.SpinerPopWindow;
 
@@ -27,21 +30,25 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private SpinerPopWindow<String> mSpinerPopWindow;
     private TextView tv2;
     private ListPopWindow listPopWindow;
-    private String[] strings={"红色","橙色","黄色","绿色","蓝色","紫色","白色","黑色"};
+    private String[] strings = {"红色", "橙色", "黄色", "绿色", "蓝色", "紫色", "白色", "黑色"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         setContentView(R.layout.activity_main);
+
         tvValue = (TextView) findViewById(R.id.tv_value);
-        tv2=(TextView)findViewById(R.id.tv2);
+        tv2 = (TextView) findViewById(R.id.tv2);
         tvValue.setOnClickListener(this);
         initData();
         mSpinerPopWindow = new SpinerPopWindow<String>(this, list, itemClickListener);
 
 
         tv2.setOnClickListener(this);
-        listPopWindow=new ListPopWindow(this);
+        listPopWindow = new ListPopWindow(this);
 
 
     }
@@ -62,6 +69,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Exit(this);
     }
 
+    public void showOther(View view) {
+
+        LayDialog layDialog = new LayDialog(this, R.style.OtherDilaog);
+        layDialog.show();
+    }
 
     public void Exit(final Context context) {
         final ConfirmDialog confirmDialog = new ConfirmDialog(context, "确定要退出吗?", "退出", "取消");
@@ -136,7 +148,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == R.id.tv_value) {
             mSpinerPopWindow.show(tvValue);
-        }else if(v.getId()==R.id.tv2){
+        } else if (v.getId() == R.id.tv2) {
             listPopWindow.setAdatper(list);
             listPopWindow.showPopuponView(tv2);
         }

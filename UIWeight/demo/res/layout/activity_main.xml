@@ -31,6 +31,13 @@
             android:layout_height="wrap_content"
             android:onClick="showConfirm"
             android:text="ConfirmD" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showOther"
+            android:text="OtherDialog" />
     </LinearLayout>
 
     <LinearLayout
