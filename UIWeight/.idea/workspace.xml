@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf750ae6-8dce-4e9e-b47f-5fdc513c3bb4" name="Default" comment="" />
+    <list default="true" id="25df2bc4-b205-4534-b49d-f6b10fa0563d" name="Default" comment="" />
     <ignored path="UIWeight.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Aes256Encryptor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dense/src/com/csdn/util/dense/Aes256Encryptor.java">
+      <file leaf-file-name="AES256Cipher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dense/src/com/csdn/util/dense/AES256Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51166964">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6247756">
+              <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -2556,7 +2556,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dense/src/com/csdn/util/dense/Aes256Encryptor.java" />
+        <option value="$PROJECT_DIR$/dense/src/com/csdn/util/dense/AES256Cipher.java" />
       </list>
     </option>
   </component>
@@ -2645,11 +2645,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UIWeight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UIWeight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dense" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2660,6 +2676,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2933,10 +2951,10 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bf750ae6-8dce-4e9e-b47f-5fdc513c3bb4" name="Default" comment="" />
-      <created>1471921632005</created>
+      <changelist id="25df2bc4-b205-4534-b49d-f6b10fa0563d" name="Default" comment="" />
+      <created>1471942183692</created>
       <option name="number" value="Default" />
-      <updated>1471921632005</updated>
+      <updated>1471942183692</updated>
     </task>
     <servers />
   </component>
@@ -2981,10 +2999,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dense/src/com/csdn/util/dense/Aes256Encryptor.java">
+    <entry file="file://$PROJECT_DIR$/dense/src/com/csdn/util/dense/AES256Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51166964">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6247756">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
           <folding />
         </state>
       </provider>
