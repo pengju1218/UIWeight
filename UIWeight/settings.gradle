@@ -1,1 +1,1 @@
-include ':demo',':UIlib'
+include ':demo',':UIlib',':dense'
