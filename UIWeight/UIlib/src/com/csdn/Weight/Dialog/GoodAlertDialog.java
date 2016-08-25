@@ -28,6 +28,7 @@ public class GoodAlertDialog {
         alertDialog = dialogBuilder.create();
         alertDialog.show();
         alertDialog.getWindow().setGravity(Gravity.CENTER);
+        alertDialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
         WindowManager.LayoutParams layoutParams = alertDialog.getWindow().getAttributes();
         layoutParams.width = Otin.getThis().dip2px(context, 500);
         layoutParams.height = LinearLayout.LayoutParams.WRAP_CONTENT;

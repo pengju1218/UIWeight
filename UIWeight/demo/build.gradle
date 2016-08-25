@@ -7,7 +7,7 @@ dependencies {
     //compile fileTree(dir: 'libs', include: '*.jar')
     // compile project(':xDroid')
      compile project(':UIlib')
-    compile project(':dense')
+     compile project(':dense')
 }
 
 android {
@@ -39,8 +39,6 @@ android {
             assets.srcDirs = ['assets']
             jniLibs.srcDirs = ['libs']
         }
-
-
     }
 	dexOptions {
         javaMaxHeapSize "1g"
