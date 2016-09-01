@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.csdn.Weight.Button.TimeButton;
 import com.csdn.Weight.Dialog.BasicDialogFragment;
 import com.csdn.Weight.Dialog.ConfirmDialog;
 import com.csdn.Weight.Dialog.GoodAlertDialog;
@@ -65,7 +66,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         imageView=(RoundImageView)findViewById(R.id.userAvater);
         imageLoader.displayImage("http://img4.imgtn.bdimg.com/it/u=98923187,3761999633&fm=11&gp=0.jpg", imageView);
 
-
+      final   TimeButton btn = (TimeButton) findViewById(R.id.timeButton);
+        btn.setTextBefore("点击获取验证码").setTextAfter("秒后重新获取").setLenght(10 * 1000);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btn.start();
+            }
+        });
     }
 
     public ImageLoader initImageLoader(Context context,
