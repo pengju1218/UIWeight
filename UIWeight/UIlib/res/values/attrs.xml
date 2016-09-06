@@ -7,5 +7,14 @@
         <attr name="border_outside_color" format="color"></attr>
     </declare-styleable>
 
+    <declare-styleable name="SizeRadioStyle">
+
+        <attr name="drawableSize" format="dimension"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+
+    </declare-styleable>
 
 </resources>
