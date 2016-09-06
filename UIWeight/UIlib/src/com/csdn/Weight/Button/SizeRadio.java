@@ -15,6 +15,7 @@ import com.csdn.Weight.R;
 public class SizeRadio  extends RadioButton {
 
     private int mDrawableSize;// xml文件中设置的大小
+    private int mDrawablePadding;
 
     public SizeRadio(Context context) {
         this(context, null, 0);
@@ -45,7 +46,13 @@ public class SizeRadio  extends RadioButton {
                 drawableBottom = a.getDrawable(attr);
             }else if(R.styleable.SizeRadioStyle_drawableRight==attr){
                 drawableRight = a.getDrawable(attr);
+            }else if(R.styleable.SizeRadioStyle_drawablePadding==attr){
+                mDrawablePadding =a.getDimensionPixelSize(R.styleable.SizeRadioStyle_drawablePadding, 10);
             }
+
+
+
+
         }
         a.recycle();
 
@@ -68,6 +75,7 @@ public class SizeRadio  extends RadioButton {
         if (bottom != null) {
             bottom.setBounds(0, 0, mDrawableSize, mDrawableSize);
         }
+        this.setCompoundDrawablePadding(mDrawablePadding);
         setCompoundDrawables(left, top, right, bottom);
     }
 

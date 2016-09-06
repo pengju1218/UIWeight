@@ -19,6 +19,9 @@
 
         app:drawableLeft="@drawable/ic_launcher"
         app:drawableSize="30dp"
+        app:drawablePadding="70dp"
+
+
 
         android:gravity="center"
         android:text="分类"

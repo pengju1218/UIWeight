@@ -8,7 +8,7 @@
     </declare-styleable>
 
     <declare-styleable name="SizeRadioStyle">
-
+        <attr name="drawablePadding" format="dimension"/>
         <attr name="drawableSize" format="dimension"/>
         <attr name="drawableTop" format="reference"/>
         <attr name="drawableLeft" format="reference"/>
