@@ -42,8 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView tv2;
     private ListPopWindow listPopWindow;
     private String[] strings = {"红色", "橙色", "黄色", "绿色", "蓝色", "紫色", "白色", "黑色"};
-    private ImageLoader imageLoader;
-    private RoundImageView imageView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,60 +61,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         tv2.setOnClickListener(this);
         listPopWindow = new ListPopWindow(this);
-        imageLoader = OrderUtil.getInstance().initImageLoader(this, imageLoader, "test");
-        imageView=(RoundImageView)findViewById(R.id.userAvater);
-        imageLoader.displayImage("http://img4.imgtn.bdimg.com/it/u=98923187,3761999633&fm=11&gp=0.jpg", imageView);
 
-      final   TimeButton btn = (TimeButton) findViewById(R.id.timeButton);
-        btn.setTextBefore("点击获取验证码").setTextAfter("秒后重新获取").setLenght(10 * 1000);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btn.start();
-            }
-        });
     }
 
-    public ImageLoader initImageLoader(Context context,
-                                       ImageLoader imageLoader, String dirName) {
-        imageLoader = ImageLoader.getInstance();
-        if (imageLoader.isInited()) {
-            // 重新初始化ImageLoader时,需要释放资源.
-            imageLoader.destroy();
-        }
-        imageLoader.init(initImageLoaderConfig(context, dirName));
-        return imageLoader;
-    }
-
-    /**
-     * 配置图片下载器
-     *
-     * @param dirName 文件名
-     */
-    private ImageLoaderConfiguration initImageLoaderConfig(
-            Context context, String dirName) {
-        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
-                context).threadPriority(Thread.NORM_PRIORITY - 2)
-                .threadPoolSize(3).memoryCacheSize(getMemoryCacheSize(context))
-                .denyCacheImageMultipleSizesInMemory()
-                .discCacheFileNameGenerator(new Md5FileNameGenerator())
-                .discCache(new UnlimitedDiscCache(new File(dirName)))
-                .tasksProcessingOrder(QueueProcessingType.LIFO).build();
-        return config;
-    }
-    private int getMemoryCacheSize(Context context) {
-        int memoryCacheSize;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
-            int memClass = ((ActivityManager) context
-                    .getSystemService(Context.ACTIVITY_SERVICE))
-                    .getMemoryClass();
-            memoryCacheSize = (memClass / 8) * 1024 * 1024; // 1/8 of app memory
-            // limit
-        } else {
-            memoryCacheSize = 2 * 1024 * 1024;
-        }
-        return memoryCacheSize;
-    }
     /**
      * popupwindow显示的ListView的item点击事件
      */

@@ -7,24 +7,39 @@
     tools:context=".MainActivity">
 
 
-    <com.csdn.Weight.Button.SizeRadio
-        android:id="@+id/tab_b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:button="@null"
-        android:checked="true"
-        android:clickable="true"
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        app:drawableLeft="@drawable/ic_launcher"
-        app:drawableSize="30dp"
-        app:drawablePadding="70dp"
-
-
-
-        android:gravity="center"
-        android:text="分类"
-        android:textSize="13sp" />
-
+        <com.csdn.Weight.Button.SizeRadio
+            android:id="@+id/tab_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="男"
+            android:textSize="13sp"
+            app:drawableLeft="@drawable/check_box_bg"
+            app:drawablePadding="70dp"
+            app:drawableSize="30dp" />
+        <com.csdn.Weight.Button.SizeRadio
+            android:id="@+id/tab_b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="女"
+            android:textSize="13sp"
+            app:drawableLeft="@drawable/check_box_bg"
+            app:drawablePadding="70dp"
+            app:drawableSize="30dp" />
+    </RadioGroup>
 </LinearLayout>

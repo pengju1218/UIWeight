@@ -43,33 +43,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <com.csdn.Weight.TextView.TextViewPlus
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_launcher"
-            android:drawablePadding="20dip"
-            android:gravity="center_vertical"
-            android:text="here is a test"
-            app:left_height="20dp"
-            app:left_width="20dp" />
-
-
-        <com.csdn.Weight.ImageView.RoundImageView
-            android:id="@+id/userAvater"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-           />
-
-        <com.csdn.Weight.Button.TimeButton
-            android:id="@+id/timeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
