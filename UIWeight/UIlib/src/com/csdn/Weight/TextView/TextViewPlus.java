@@ -71,6 +71,30 @@ public class TextViewPlus extends TextView {
 
     }
 
+    public void setDrawableLeft(Drawable drawable) {
+        setImageSize(drawable, 0);
+        setCompoundDrawables(drawable, null, null, null);
+        invalidate();
+    }
+
+    public void setDrawableTop(Drawable drawable) {
+        setImageSize(drawable, 1);
+        setCompoundDrawables(null, drawable, null, null);
+        invalidate();
+    }
+
+    public void setDrawableBottom(Drawable drawable) {
+        setImageSize(drawable, 3);
+        setCompoundDrawables(null, null, null, drawable);
+        invalidate();
+    }
+
+    public void setDrawabRight(Drawable drawable) {
+        setImageSize(drawable, 2);
+        setCompoundDrawables(null, null, drawable, null);
+        invalidate();
+    }
+
     /**
      * 设定图片的大小
      */
