@@ -56,4 +56,12 @@
         <attr name="bottom_height" format="dimension" />
         <attr name="bottom_width" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="MoreTextStyle">
+        <attr name="mytextSize" format="dimension" />
+        <attr name="mytextColor" format="color" />
+        <attr name="maxLine" format="integer" />
+        <attr name="mytext" format="string" />
+        <attr name="expand" format="boolean" />
+    </declare-styleable>
 </resources>

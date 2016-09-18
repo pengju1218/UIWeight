@@ -28,6 +28,7 @@
         <activity android:name=".RoundImageA"></activity>
         <activity android:name=".TextViewPlusA"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MoreTextA"></activity>
     </application>
 
 </manifest>
