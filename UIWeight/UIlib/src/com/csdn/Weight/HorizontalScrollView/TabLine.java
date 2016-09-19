@@ -135,21 +135,20 @@ public class TabLine extends HorizontalScrollView {
         }
     }
 
-
+    private int number=0;
     public void setOnSelectTabIndex(int index) {
         int n = linearLayout.getChildCount();
         for (int i = 0; i < n; i++) {
             View v = linearLayout.getChildAt(i);
             if (v instanceof TextView) {
-                if (index == i) {
+                if (number == index) {
                     ((TextView) v).setTextColor(select_color);
                 } else {
                     ((TextView) v).setTextColor(unSelect_color);
                 }
-
+                number++;
             }
         }
-
     }
 
     public OnSelectListener onSelectListener;
