@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.csdn.Weight.HorizontalScrollView.TabLine
+        android:id="@+id/eeewa"
+        app:tab_SelectColor="@color/red"
+        app:tab_UnSelectColor="@color/white"
+        app:tab_BgColor="@color/nomal_bg"
+        android:layout_width="match_parent"
+        android:layout_height="90dip" />
+
+
+</LinearLayout>

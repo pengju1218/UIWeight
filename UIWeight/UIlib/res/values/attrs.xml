@@ -26,4 +26,13 @@
         <attr name="pivPasswordLength" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="TabLineStyle">
+        <attr name="tab_TextSize" format="dimension" />
+        <attr name="tabItem_Width" format="dimension" />
+        <attr name="tab_BgColor" format="color" />
+        <attr name="tab_SelectColor" format="color" />
+        <attr name="tab_UnSelectColor" format="color" />
+        <attr name="tab_lineColor" format="color" />
+    </declare-styleable>
+
 </resources>

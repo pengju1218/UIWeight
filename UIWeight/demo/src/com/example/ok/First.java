@@ -16,10 +16,10 @@ public class First extends Activity {
 
     private android.widget.ListView listview;
     private Class<?>[] aClass = {Test.class, PassLenth.class, TimeButtona.class, RoundImageA.class,
-            TextViewPlusA.class, MainActivity.class, MoreTextA.class};
+            TextViewPlusA.class, MainActivity.class, MoreTextA.class,TabActivity.class};
     private String[] strings = {"SizeRadio(可自定义图片大小单选按钮)",
             "PasswordInputView(密码长度定长)", "TimeButton(验证60s)",
-            "RoundImage(下载网张图片)", "TextViewPlus(图标大小)", "对话框", "折叠文本"};
+            "RoundImage(下载网张图片)", "TextViewPlus(图标大小)", "对话框", "折叠文本","tab标签"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class First extends Activity {
         setContentView(R.layout.first);
         this.listview = (ListView) findViewById(R.id.listview);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                First.this, android.R.layout.simple_list_item_1,
+                First.this, R.layout.line_item,
                 strings);
         listview.setAdapter(arrayAdapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
