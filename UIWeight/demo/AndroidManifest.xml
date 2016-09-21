@@ -30,6 +30,9 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".MoreTextA"></activity>
         <activity android:name=".TabActivity"></activity>
+        <activity android:name=".CircleImgActivity"></activity>
+
+
     </application>
 
 </manifest>

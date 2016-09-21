@@ -16,10 +16,11 @@ public class First extends Activity {
 
     private android.widget.ListView listview;
     private Class<?>[] aClass = {Test.class, PassLenth.class, TimeButtona.class, RoundImageA.class,
-            TextViewPlusA.class, MainActivity.class, MoreTextA.class,TabActivity.class};
+            TextViewPlusA.class, MainActivity.class, MoreTextA.class, TabActivity.class,CircleImgActivity.class};
     private String[] strings = {"SizeRadio(可自定义图片大小单选按钮)",
             "PasswordInputView(密码长度定长)", "TimeButton(验证60s)",
-            "RoundImage(下载网张图片)", "TextViewPlus(图标大小)", "对话框", "折叠文本","tab标签"};
+            "RoundImage(下载网张图片)", "TextViewPlus(图标大小)",
+            "对话框", "折叠文本", "tab标签","圆形图片"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
