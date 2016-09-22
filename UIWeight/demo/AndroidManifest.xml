@@ -31,7 +31,7 @@
         <activity android:name=".MoreTextA"></activity>
         <activity android:name=".TabActivity"></activity>
         <activity android:name=".CircleImgActivity"></activity>
-
+        <activity android:name=".TextKeyActivity"></activity>
 
     </application>
 

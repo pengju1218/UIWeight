@@ -8,22 +8,22 @@
     </declare-styleable>
 
     <declare-styleable name="SizeRadioStyle">
-        <attr name="drawablePadding" format="dimension"/>
-        <attr name="drawableSize" format="dimension"/>
-        <attr name="drawableTop" format="reference"/>
-        <attr name="drawableLeft" format="reference"/>
-        <attr name="drawableRight" format="reference"/>
-        <attr name="drawableBottom" format="reference"/>
+        <attr name="drawablePadding" format="dimension" />
+        <attr name="drawableSize" format="dimension" />
+        <attr name="drawableTop" format="reference" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference" />
+        <attr name="drawableBottom" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="PasswordInputView">
-        <attr name="pivBorderColor" format="color"/>
-        <attr name="pivBorderWidth" format="dimension"/>
-        <attr name="pivBorderRadius" format="dimension"/>
-        <attr name="pivPasswordColor" format="color"/>
-        <attr name="pivPasswordWidth" format="dimension"/>
-        <attr name="pivPasswordRadius" format="dimension"/>
-        <attr name="pivPasswordLength" format="integer"/>
+        <attr name="pivBorderColor" format="color" />
+        <attr name="pivBorderWidth" format="dimension" />
+        <attr name="pivBorderRadius" format="dimension" />
+        <attr name="pivPasswordColor" format="color" />
+        <attr name="pivPasswordWidth" format="dimension" />
+        <attr name="pivPasswordRadius" format="dimension" />
+        <attr name="pivPasswordLength" format="integer" />
     </declare-styleable>
 
     <declare-styleable name="TabLineStyle">
@@ -34,5 +34,16 @@
         <attr name="tab_UnSelectColor" format="color" />
         <attr name="tab_lineColor" format="color" />
     </declare-styleable>
+
+
+    <declare-styleable name="KeyTextStyle">
+        <attr name="key_name_Color" format="color" />
+        <attr name="key_name_Size" format="dimension" />
+        <attr name="key_value_Color" format="color" />
+        <attr name="key_value_Size" format="dimension" />
+        <attr name="key_name" format="string" />
+        <attr name="key_value" format="string" />
+    </declare-styleable>
+
 
 </resources>
