@@ -27,7 +27,7 @@ public class TabLine extends HorizontalScrollView {
     private float textSize;
     private int item_width;
     private int bg_color, select_color, unSelect_color, line_color;
-
+    private boolean visiable = false;
     public void setName(String[] name) {
         this.name = name;
         initName();
@@ -64,9 +64,10 @@ public class TabLine extends HorizontalScrollView {
         textSize = a.getDimensionPixelSize(R.styleable.TabLineStyle_tab_TextSize, 15);
         item_width = a.getDimensionPixelSize(R.styleable.TabLineStyle_tabItem_Width, 0);//单个的宽度
         bg_color = a.getColor(R.styleable.TabLineStyle_tab_BgColor, Color.LTGRAY);//
+        visiable = a.getBoolean(R.styleable.TabLineStyle_tab_divide_Visiable, false);
         select_color = a.getColor(R.styleable.TabLineStyle_tab_SelectColor, Color.RED);//
         unSelect_color = a.getColor(R.styleable.TabLineStyle_tab_UnSelectColor, Color.WHITE);//
-        line_color = a.getColor(R.styleable.TabLineStyle_tab_lineColor, Color.WHITE);//
+        line_color = a.getColor(R.styleable.TabLineStyle_tab_LineColor, Color.WHITE);//
     }
 
 
@@ -101,6 +102,9 @@ public class TabLine extends HorizontalScrollView {
             View line = new View(context);
             LayoutParams params2 = new LayoutParams(Otin.getThis().dip2px(context, 1), LayoutParams.MATCH_PARENT);
             line.setLayoutParams(params2);
+            int vi = visiable ? View.VISIBLE : View.GONE;
+            line.setVisibility(vi);
+
             line.setBackgroundColor(line_color);
 
             if (i < name.length - 1) {
