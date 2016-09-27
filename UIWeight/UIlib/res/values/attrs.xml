@@ -47,5 +47,13 @@
         <attr name="key_value" format="string" />
     </declare-styleable>
 
-
+    <declare-styleable name="PasswordView">
+        <attr name="pass2_borderWidth" format="dimension"/>
+        <attr name="pass2_borderColor" format="color"/>
+        <attr name="pass2_borderRadius" format="dimension"/>
+        <attr name="pass2_passwordLength" format="integer"/>
+        <attr name="pass2_passwordWidth" format="dimension"/>
+        <attr name="pass2_passwordColor" format="color"/>
+        <attr name="pass2_passwordRadius" format="dimension"/>
+    </declare-styleable>
 </resources>

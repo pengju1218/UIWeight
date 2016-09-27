@@ -20,6 +20,13 @@
         app:pivBorderWidth="10dp"
         app:pivPasswordColor="#cccccc"
         app:pivPasswordLength="6"
-        app:pivPasswordWidth="10dp" />
+        app:pivPasswordWidth="9dp" />
+
+
+    <com.csdn.Weight.EditText.PassView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@android:color/white"
+        android:maxLength="6" />
 
 </LinearLayout>
