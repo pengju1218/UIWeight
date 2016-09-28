@@ -26,7 +26,14 @@
     <com.csdn.Weight.EditText.PassView
         android:layout_width="match_parent"
         android:layout_height="40dip"
+        android:id="@+id/idaeesl"
         android:background="@android:color/white"
         android:maxLength="6" />
+
+    <Button
+        android:id="@+id/ob"
+        android:text="点击"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

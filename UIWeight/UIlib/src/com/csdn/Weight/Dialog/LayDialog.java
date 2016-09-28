@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 import com.csdn.Weight.R;
 
@@ -27,7 +28,9 @@ public class LayDialog extends Dialog {
         Window window = getWindow();
         WindowManager.LayoutParams params = window.getAttributes();
         params.gravity = Gravity.CENTER;
-        window.getDecorView().setPadding(100, 0, 100, 0);
+        window.getDecorView().setPadding(10, 0, 10, 0);
+        params.width = LinearLayout.LayoutParams.MATCH_PARENT; // 宽度
+        params.height = LinearLayout.LayoutParams.WRAP_CONTENT; // 高度*/
         this.setCanceledOnTouchOutside(true);
        /* params.x = 0; // 新位置X坐标
         params.y = 0; // 新位置Y坐标
