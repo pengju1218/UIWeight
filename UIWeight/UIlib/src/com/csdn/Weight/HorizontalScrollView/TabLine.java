@@ -104,9 +104,7 @@ public class TabLine extends HorizontalScrollView {
             line.setLayoutParams(params2);
             int vi = visiable ? View.VISIBLE : View.GONE;
             line.setVisibility(vi);
-
             line.setBackgroundColor(line_color);
-
             if (i < name.length - 1) {
                 linearLayout.addView(line);
             }

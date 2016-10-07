@@ -1,4 +1,4 @@
-package com.example.ok;
+package com.example.ok.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import com.csdn.Weight.ImageView.RoundImageView;
 import com.csdn.Weight.ImageView.displayers.CircleBitmapDisplayer;
 import com.example.ok.Base.BaseActivity;
+import com.example.ok.R;
 import com.example.ok.util.OrderUtil;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;

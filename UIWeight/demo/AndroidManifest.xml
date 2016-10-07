@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar">
         <activity
-            android:name="com.example.ok.First"
+            android:name=".activity.First"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,16 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Test"></activity>
-        <activity android:name=".PassLenth"></activity>
-        <activity android:name=".TimeButtona"></activity>
-        <activity android:name=".RoundImageA"></activity>
-        <activity android:name=".TextViewPlusA"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".MoreTextA"></activity>
-        <activity android:name=".TabActivity"></activity>
-        <activity android:name=".CircleImgActivity"></activity>
-        <activity android:name=".TextKeyActivity"></activity>
+        <activity android:name=".activity.Test"></activity>
+        <activity android:name=".activity.PassLenth"></activity>
+        <activity android:name=".activity.TimeButtona"></activity>
+        <activity android:name=".activity.RoundImageA"></activity>
+        <activity android:name=".activity.TextViewPlusA"></activity>
+        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.MoreTextA"></activity>
+        <activity android:name=".activity.TabActivity"></activity>
+        <activity android:name=".activity.CircleImgActivity"></activity>
+        <activity android:name=".activity.TextKeyActivity"></activity>
+        <activity android:name=".activity.DashLineActivity"></activity>
     </application>
 
 </manifest>

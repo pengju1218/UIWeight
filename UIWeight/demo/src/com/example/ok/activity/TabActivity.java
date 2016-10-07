@@ -1,4 +1,4 @@
-package com.example.ok;
+package com.example.ok.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 import com.csdn.Weight.HorizontalScrollView.TabLine;
 import com.example.ok.Base.BaseActivity;
+import com.example.ok.R;
 
 public class TabActivity extends BaseActivity implements View.OnClickListener {
     private TabLine eeewa;

@@ -1,4 +1,4 @@
-package com.example.ok;
+package com.example.ok.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
+
+import com.example.ok.R;
 
 /**
  * Created by Administrator on 2016/9/7.
@@ -17,13 +18,13 @@ public class First extends Activity {
     private android.widget.ListView listview;
     private Class<?>[] aClass = {Test.class, PassLenth.class, TimeButtona.class, RoundImageA.class,
             TextViewPlusA.class, MainActivity.class, MoreTextA.class,
-            TabActivity.class, CircleImgActivity.class, TextKeyActivity.class,
+            TabActivity.class, CircleImgActivity.class, TextKeyActivity.class,DashLineActivity.class
 
     };
     private String[] strings = {"SizeRadio(可自定义图片大小单选按钮)",
             "PasswordInputView(密码长度定长)", "TimeButton(验证60s)",
             "RoundImage(下载网张图片)", "TextViewPlus(图标大小)",
-            "对话框", "折叠文本", "tab标签", "圆形图片", "组合字体"};
+            "对话框", "折叠文本", "tab标签", "圆形图片", "组合字体","虚线"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

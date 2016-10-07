@@ -1,4 +1,4 @@
-package com.example.ok;
+package com.example.ok.activity;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -23,6 +23,7 @@ import com.csdn.Weight.Dialog.LayDialog;
 import com.csdn.Weight.ImageView.RoundImageView;
 import com.csdn.Weight.Spinner.ListPopWindow;
 import com.csdn.Weight.Spinner.SpinerPopWindow;
+import com.example.ok.R;
 import com.example.ok.util.OrderUtil;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;

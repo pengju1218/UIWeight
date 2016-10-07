@@ -1,9 +1,10 @@
-package com.example.ok;
+package com.example.ok.activity;
 
 import android.os.Bundle;
 
 import com.csdn.Weight.TextView.KeyTextView;
 import com.example.ok.Base.BaseActivity;
+import com.example.ok.R;
 
 public class TextKeyActivity extends BaseActivity {
 

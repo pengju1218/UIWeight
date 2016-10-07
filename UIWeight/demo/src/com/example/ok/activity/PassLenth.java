@@ -1,4 +1,4 @@
-package com.example.ok;
+package com.example.ok.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.csdn.Weight.EditText.PassView;
 import com.csdn.Weight.EditText.PasswordInputView;
+import com.example.ok.R;
 
 public class PassLenth extends Activity implements View.OnClickListener {
 

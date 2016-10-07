@@ -48,12 +48,27 @@
     </declare-styleable>
 
     <declare-styleable name="PasswordView">
-        <attr name="pass2_borderWidth" format="dimension"/>
-        <attr name="pass2_borderColor" format="color"/>
-        <attr name="pass2_borderRadius" format="dimension"/>
-        <attr name="pass2_passwordLength" format="integer"/>
-        <attr name="pass2_passwordWidth" format="dimension"/>
-        <attr name="pass2_passwordColor" format="color"/>
-        <attr name="pass2_passwordRadius" format="dimension"/>
+        <attr name="pass2_borderWidth" format="dimension" />
+        <attr name="pass2_borderColor" format="color" />
+        <attr name="pass2_borderRadius" format="dimension" />
+        <attr name="pass2_passwordLength" format="integer" />
+        <attr name="pass2_passwordWidth" format="dimension" />
+        <attr name="pass2_passwordColor" format="color" />
+        <attr name="pass2_passwordRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="dashedline">
+        <attr name="dash_lineColor" format="color" />
+        <attr name="dash_vertical" format="boolean" />
+        <attr name="dash_lineWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DashView">
+        <attr name="dashWidth" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="dashOrientation" format="integer" />
+
     </declare-styleable>
 </resources>
