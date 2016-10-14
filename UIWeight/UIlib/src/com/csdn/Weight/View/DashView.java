@@ -56,9 +56,9 @@ public class DashView extends View {
         super(context, attrs);
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DashView);
         dashWidth = typedArray.getDimension(R.styleable.DashView_dashWidth, DEFAULT_DASH_WIDTH);
-        lineHeight = typedArray.getDimension(R.styleable.DashView_lineHeight, DEFAULT_LINE_HEIGHT);
-        lineWidth = typedArray.getDimension(R.styleable.DashView_lineWidth, DEFAULT_LINE_WIDTH);
-        lineColor = typedArray.getColor(R.styleable.DashView_lineColor, DEFAULT_LINE_COLOR);
+        lineHeight = typedArray.getDimension(R.styleable.DashView_dashlineHeight, DEFAULT_LINE_HEIGHT);
+        lineWidth = typedArray.getDimension(R.styleable.DashView_dashlineWidth, DEFAULT_LINE_WIDTH);
+        lineColor = typedArray.getColor(R.styleable.DashView_dashlineColor, DEFAULT_LINE_COLOR);
         dashOrientation = typedArray.getInteger(R.styleable.DashView_dashOrientation, DEFAULT_DASH_ORIENTATION);
         mPaint.setColor(lineColor);
         mPaint.setStrokeWidth(lineHeight);

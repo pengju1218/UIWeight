@@ -33,6 +33,7 @@
         <activity android:name=".activity.CircleImgActivity"></activity>
         <activity android:name=".activity.TextKeyActivity"></activity>
         <activity android:name=".activity.DashLineActivity"></activity>
+        <activity android:name=".activity.SlidingTabActivity"></activity>
     </application>
 
 </manifest>

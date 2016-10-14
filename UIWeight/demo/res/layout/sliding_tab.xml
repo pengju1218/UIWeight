@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.csdn.Weight.HorizontalScrollView.SlidingTab
+        android:id="@+id/slidingtab"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/black"
+        app:textFocusColor="@color/crimson"
+        app:textPadding="0dip"
+        app:textSize="12sp" />
+
+    <com.csdn.Weight.HorizontalScrollView.SlidingTab
+        android:id="@+id/slidingtab_slid"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="1dip"
+        android:background="@color/black"
+        app:slinglineColor="@color/crimson"
+        app:scroller="true"
+        app:textFocusColor="@color/cadetblue"
+        app:textPadding="30dip"
+        app:textSize="12sp" />
+
+</LinearLayout>
