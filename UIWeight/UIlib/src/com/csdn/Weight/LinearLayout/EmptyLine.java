@@ -3,6 +3,8 @@ package com.csdn.Weight.LinearLayout;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -52,7 +54,7 @@ public class EmptyLine extends LinearLayout {
         LinearLayout.LayoutParams img_prarms = new LinearLayout.LayoutParams(Otin.getThis().dip2px(context, 160),
                 Otin.getThis().dip2px(context, 110));
         img_prarms.gravity = Gravity.CENTER;
-        img_prarms.setMargins(0, Otin.getThis().dip2px(context, 100), 0, 0);
+        img_prarms.setMargins(0, Otin.getThis().dip2px(context, 70), 0, 0);
         imageView.setLayoutParams(img_prarms);
         imageView.setImageResource(R.drawable.nonet);
         this.addView(imageView);
@@ -93,13 +95,33 @@ public class EmptyLine extends LinearLayout {
             @Override
             public void onClick(View v) {
                 proDialog.show();
+                EmptyLine.this.setVisibility(GONE);
                 if (onSendDataListener != null) {
                     onSendDataListener.send();
                 }
             }
         });
     }
+    private Handler handler = new Handler() {
 
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if (msg.what == 0) {
+                proDialog.dismiss();
+            }
+        }
+    };
+    public void setProGone(){
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                handler.sendEmptyMessage(0);
+            }
+        },200);
+
+    }
     private OnSendDataListener onSendDataListener;
 
     public void setOnSendDataListener(OnSendDataListener onSendDataListener) {
