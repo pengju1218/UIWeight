@@ -35,6 +35,7 @@
         <activity android:name=".activity.DashLineActivity"></activity>
         <activity android:name=".activity.SlidingTabActivity"></activity>
         <activity android:name=".activity.EmptyActivity"></activity>
+        <activity android:name=".activity.ToastActivity"></activity>
     </application>
 
 </manifest>
