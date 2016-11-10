@@ -32,27 +32,24 @@ public class SizeRadio  extends RadioButton {
         TypedArray a = context.obtainStyledAttributes(attrs,
                 R.styleable.SizeRadioStyle);
 
+
         int n = a.getIndexCount();
         for (int i = 0; i < n; i++) {
             int attr = a.getIndex(i);
             Log.i("MyRadioButton", "attr:" + attr);
-            if(R.styleable.SizeRadioStyle_drawableSize==attr){
-                mDrawableSize = a.getDimensionPixelSize(R.styleable.SizeRadioStyle_drawableSize, 50);
-            }else if(R.styleable.SizeRadioStyle_drawableTop==attr){
+            if(R.styleable.SizeRadioStyle_sizeRadio_drawableSize==attr){
+                mDrawableSize = a.getDimensionPixelSize(R.styleable.SizeRadioStyle_sizeRadio_drawableSize, 50);
+            }else if(R.styleable.SizeRadioStyle_sizeRadio_drawableTop==attr){
                 drawableTop = a.getDrawable(attr);
-            }else if(R.styleable.SizeRadioStyle_drawableLeft==attr){
+            }else if(R.styleable.SizeRadioStyle_sizeRadio_drawableLeft==attr){
                 drawableLeft= a.getDrawable(attr);
-            }else if(R.styleable.SizeRadioStyle_drawableBottom==attr){
+            }else if(R.styleable.SizeRadioStyle_sizeRadio_drawableBottom==attr){
                 drawableBottom = a.getDrawable(attr);
-            }else if(R.styleable.SizeRadioStyle_drawableRight==attr){
+            }else if(R.styleable.SizeRadioStyle_sizeRadio_drawableRight==attr){
                 drawableRight = a.getDrawable(attr);
-            }else if(R.styleable.SizeRadioStyle_drawablePadding==attr){
-                mDrawablePadding =a.getDimensionPixelSize(R.styleable.SizeRadioStyle_drawablePadding, 10);
+            }else if(R.styleable.SizeRadioStyle_sizeRadio_drawablePadding==attr){
+                mDrawablePadding =a.getDimensionPixelSize(R.styleable.SizeRadioStyle_sizeRadio_drawablePadding, 10);
             }
-
-
-
-
         }
         a.recycle();
 

@@ -24,9 +24,12 @@
             android:gravity="center"
             android:text="男"
             android:textSize="13sp"
-            app:drawableLeft="@drawable/check_box_bg"
-            app:drawablePadding="70dp"
-            app:drawableSize="30dp" />
+            app:sizeRadio_drawableLeft="@drawable/check_box_bg"
+            app:sizeRadio_drawablePadding="70dp"
+            app:sizeRadio_drawableSize="10dip" />
+
+
+
         <com.csdn.Weight.Button.SizeRadio
             android:id="@+id/tab_b1"
             android:layout_width="wrap_content"
@@ -38,8 +41,8 @@
             android:gravity="center"
             android:text="女"
             android:textSize="13sp"
-            app:drawableLeft="@drawable/check_box_bg"
-            app:drawablePadding="70dp"
-            app:drawableSize="30dp" />
+            app:sizeRadio_drawableLeft="@drawable/check_box_bg"
+            app:sizeRadio_drawablePadding="70dp"
+            app:sizeRadio_drawableSize="10dip" />
     </RadioGroup>
 </LinearLayout>

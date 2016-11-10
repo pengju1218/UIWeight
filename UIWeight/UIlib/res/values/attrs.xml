@@ -6,14 +6,13 @@
         <attr name="border_inside_color" format="color" />
         <attr name="border_outside_color" format="color"></attr>
     </declare-styleable>
-
     <declare-styleable name="SizeRadioStyle">
-        <attr name="drawablePadding" format="dimension" />
-        <attr name="drawableSize" format="dimension" />
-        <attr name="drawableTop" format="reference" />
-        <attr name="drawableLeft" format="reference" />
-        <attr name="drawableRight" format="reference" />
-        <attr name="drawableBottom" format="reference" />
+        <attr name="sizeRadio_drawablePadding" format="dimension" />
+        <attr name="sizeRadio_drawableSize" format="dimension" />
+        <attr name="sizeRadio_drawableTop" format="reference" />
+        <attr name="sizeRadio_drawableLeft" format="reference" />
+        <attr name="sizeRadio_drawableRight" format="reference" />
+        <attr name="sizeRadio_drawableBottom" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="PasswordInputView">
