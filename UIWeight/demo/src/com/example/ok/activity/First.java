@@ -20,14 +20,15 @@ public class First extends Activity {
             TextViewPlusA.class, MainActivity.class, MoreTextA.class,
             TabActivity.class, CircleImgActivity.class,
             TextKeyActivity.class, DashLineActivity.class, SlidingTabActivity.class, EmptyActivity.class,
-            ToastActivity.class,TimeActivity.class
+            ToastActivity.class, TimeActivity.class,NumberImgActivity.class
 
     };
     private String[] strings = {"SizeRadio(可自定义图片大小单选按钮)",
             "PasswordInputView(密码长度定长)", "TimeButton(验证60s)",
             "RoundImage(下载网张图片)", "TextViewPlus(图标大小)",
             "对话框", "折叠文本", "tab标签", "圆形图片",
-            "组合字体", "虚线", "滑动tab", "网络状态","Toast自定义","倒计时"};
+            "组合字体", "虚线", "滑动tab", "网络状态", "Toast自定义", "倒计时",
+            "图片角标"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

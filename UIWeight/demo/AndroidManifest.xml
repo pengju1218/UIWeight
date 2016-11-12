@@ -37,6 +37,7 @@
         <activity android:name=".activity.EmptyActivity"></activity>
         <activity android:name=".activity.ToastActivity"></activity>
         <activity android:name=".activity.TimeActivity"></activity>
+        <activity android:name=".activity.NumberImgActivity"></activity>
     </application>
 
 </manifest>
