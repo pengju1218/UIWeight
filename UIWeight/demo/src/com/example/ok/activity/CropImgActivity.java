@@ -22,6 +22,8 @@ import com.csdn.Weight.ImageView.CropImageView;
 import com.csdn.Weight.ImageView.crop.Crop;
 import com.csdn.Weight.ImageView.crop.util.FileUtils;
 import com.csdn.Weight.ImageView.displayers.CircleBitmapDisplayer;
+import com.csdn.Weight.adapter.Base.CommonAdapter;
+import com.csdn.Weight.adapter.Base.CommonViewHolder;
 import com.example.ok.Base.BaseActivity;
 import com.example.ok.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -29,6 +31,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.io.File;
+import java.util.List;
 
 public class CropImgActivity extends BaseActivity {
 
@@ -153,6 +156,22 @@ public class CropImgActivity extends BaseActivity {
         super.onDestroy();
         if (mTempDir.exists()) {
             FileUtils.deleteFile(mTempDir);
+        }
+    }
+
+    public class Adapter extends CommonAdapter<String> {//传入任意数据源类型
+
+        public Adapter(Activity context, List<String> mDataList, int layoutId) {
+            super(context, mDataList, layoutId);
+        }
+
+        @Override
+        public void resetView(int position, CommonViewHolder viewHolder, String item) {
+            //这里写入你的item的view逻辑处理和数据绑定
+            //提供两种getview方法
+           // viewHolder.getView(R.id.textView, TextView.class).setText("");
+           // TextView textView=viewHolder.getView(R.id.textView);
+
         }
     }
 
