@@ -13,7 +13,7 @@
         android:background="@color/black"
         app:textFocusColor="@color/crimson"
         app:textPadding="0dip"
-        app:textSize="12sp" />
+        app:Slingtab_textSize="12sp" />
 
     <com.csdn.Weight.HorizontalScrollView.SlidingTab
         android:id="@+id/slidingtab_slid"
@@ -25,6 +25,6 @@
         app:scroller="true"
         app:textFocusColor="@color/cadetblue"
         app:textPadding="30dip"
-        app:textSize="12sp" />
+        app:Slingtab_textSize="12sp" />
 
 </LinearLayout>

@@ -8,6 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -38,6 +40,7 @@
         <activity android:name=".activity.ToastActivity"></activity>
         <activity android:name=".activity.TimeActivity"></activity>
         <activity android:name=".activity.NumberImgActivity"></activity>
+        <activity android:name=".activity.CropImgActivity"></activity>
     </application>
 
 </manifest>

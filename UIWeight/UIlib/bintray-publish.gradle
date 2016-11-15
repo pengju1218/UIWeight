@@ -1,0 +1,124 @@
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+
+
+version = "1.0.3"
+
+//def siteUrl = 'https://github.com/Rukey7/DragSlopLayout'
+//def gitUrl = 'https://github.com/Rukey7/DragSlopLayout'
+// 定义两个链接，下面会用到。
+def siteUrl = 'https://github.com/pengju1218/UIWeight' // 项目主页。
+def gitUrl = 'https://github.com/pengju1218/UIWeight.git' // Git仓库的url。
+
+def issueUrl = 'https://github.com/pengju1218/UIWeight/issues'    //issue url of the library
+group = "com.csdn.Weight"
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'
+                // Add your description here
+                name 'UIlib'
+                artifactId 'UIlib'
+                url siteUrl
+                // Set your license
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                //填写开发者基本信息，复制我的，这里需要修改。
+                developers {
+                    developer {
+                        id 'pengju1218' // 开发者的id。
+                        name 'pengju1218' // 开发者名字。
+                        email 'normal502@163.com' // 开发者邮箱。
+                    }
+                }
+
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+        }
+    }
+}
+
+//important
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+allprojects {
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+    }
+}
+javadoc {
+    options{
+        encoding "UTF-8"
+        charSet 'UTF-8'
+        author true
+        version true
+        links "http://docs.oracle.com/javase/7/docs/api"
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        repo = "UIWeight"    //发布到Bintray的哪个仓库
+        name = "UIlib"    //发布到Bintray上的名字
+        desc = "A library to add tag for ImageView."    //项目描述
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        issueTrackerUrl = issueUrl
+        licenses = ["Apache-2.0"]
+        labels = ['android']    //标签
+        publish = true
+        publicDownloadNumbers = true
+    }
+}
+
+/*mavenCentralSync {
+    sync = true //Optional (true by default). Determines whether to sync the version to Maven Central.
+    user = 'pengju1218' //OSS user token
+    password = 'www6727865' //OSS user password
+    close = '1' //Optional property. By default the staging repository is closed and artifacts are released to Maven Central. You can optionally turn this behaviour off (by puting 0 as value) and release the version manually.
+}*/
+//gradlew install
+//gradlew bintrayUpload
+
+
+
+
+
+
+
+

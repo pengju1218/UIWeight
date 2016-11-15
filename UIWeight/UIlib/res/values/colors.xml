@@ -153,4 +153,9 @@
     <color name="empty_color">#f5f5f5</color>
     <color name="black1">#333333</color>
     <color name="black2">#767676</color>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
 </resources>

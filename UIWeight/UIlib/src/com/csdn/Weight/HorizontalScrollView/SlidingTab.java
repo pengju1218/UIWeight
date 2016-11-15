@@ -70,13 +70,13 @@ public class SlidingTab extends HorizontalScrollView {
         textPadding = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, textPadding, dm);
         textSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, textSize, dm);
         TypedArray mTypedValue = getContext().obtainStyledAttributes(attrs, R.styleable.SlingTab);
-        textColor = mTypedValue.getColor(R.styleable.SlingTab_textColor, textColor);
+        textColor = mTypedValue.getColor(R.styleable.SlingTab_Slingtab_textColor, textColor);
         textDefColor = mTypedValue.getColor(R.styleable.SlingTab_textDefColor, textDefColor);
 
         scroller = mTypedValue.getBoolean(R.styleable.SlingTab_scroller, false);
 
         textPadding = mTypedValue.getDimension(R.styleable.SlingTab_textPadding, textPadding);
-        textSize = mTypedValue.getDimension(R.styleable.SlingTab_textSize, textSize);
+        textSize = mTypedValue.getDimension(R.styleable.SlingTab_Slingtab_textSize, textSize);
         lineHeight = mTypedValue.getDimension(R.styleable.SlingTab_slinglineHeight, lineHeight);
         lineColor = mTypedValue.getColor(R.styleable.SlingTab_slinglineColor, lineColor);
         line_margin_top = mTypedValue.getDimension(R.styleable.SlingTab_line_marginTop, line_margin_top);
