@@ -96,4 +96,16 @@
             <enum name="never" value="2" />
         </attr>
     </declare-styleable>
+
+
+
+
+    <declare-styleable name="TypeScroller">
+        <attr name="typescroller_Vspace" format="dimension"></attr>
+        <attr name="typescroller_Hspace" format="dimension"></attr>
+        <attr name="typescroller_first_left" format="dimension"></attr>
+
+
+
+    </declare-styleable>
 </resources>

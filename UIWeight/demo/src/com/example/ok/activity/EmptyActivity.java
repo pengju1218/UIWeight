@@ -26,21 +26,22 @@ public class EmptyActivity extends BaseActivity implements View.OnClickListener 
             }
         });
     }
-    Handler handler=new Handler(){
+
+    Handler handler = new Handler() {
 
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            if(msg.what==0){
+            if (msg.what == 0) {
                 empty.setProGone();
-                if(true){
+                if (true) {
                     empty.setVisibility(View.VISIBLE);
                 }
             }
         }
     };
-    public void  sendData(){
 
+    public void sendData() {
 
 
         handler.postDelayed(new Runnable() {
@@ -48,7 +49,7 @@ public class EmptyActivity extends BaseActivity implements View.OnClickListener 
             public void run() {
                 handler.sendEmptyMessage(0);
             }
-        },10);
+        }, 10);
 
 
     }

@@ -42,6 +42,7 @@
         <activity android:name=".activity.NumberImgActivity"></activity>
         <activity android:name=".activity.CropImgActivity"></activity>
         <activity android:name=".activity.HortalListView"></activity>
+        <activity android:name=".activity.TypeScrollActivity"></activity>
     </application>
 
 </manifest>

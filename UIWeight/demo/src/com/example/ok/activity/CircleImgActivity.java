@@ -9,6 +9,7 @@ import com.csdn.Weight.ImageView.displayers.CircleBitmapDisplayer;
 import com.example.ok.Base.BaseActivity;
 import com.example.ok.R;
 import com.example.ok.util.OrderUtil;
+
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;

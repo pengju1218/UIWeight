@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.csdn.Weight.HorizontalScrollView.TypeScroller
+        android:id="@+id/test_scoller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:typescroller_first_left="15dip"
+        app:typescroller_Hspace="10dip"
+        app:typescroller_Vspace="3dip" />
+
+</LinearLayout>

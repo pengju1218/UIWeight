@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/UIlib/UIlib.iml" filepath="$PROJECT_DIR$/UIlib/UIlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dense/dense.iml" filepath="$PROJECT_DIR$/dense/dense.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
     </modules>
   </component>
 </project>
