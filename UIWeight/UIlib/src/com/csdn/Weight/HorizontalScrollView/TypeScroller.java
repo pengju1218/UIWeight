@@ -23,6 +23,7 @@ import com.csdn.Weight.util.Otin;
 public class TypeScroller extends HorizontalScrollView implements View.OnClickListener {
 
 
+    private int selectId = 1;
     private Context context;
     private LinearLayout container;
     private int other_margin_vspce = 5, other_margin_hspce = 10;
@@ -100,20 +101,42 @@ public class TypeScroller extends HorizontalScrollView implements View.OnClickLi
             text_other.setTextColor(Color.parseColor("#000000"));
             text_other.setTextSize(15);
             text_other.setText(titles1[i]);
-            text_other.setBackgroundResource(R.drawable.tvbg_mvfind_sector);
+
             onItemClick(text_other, i);
             //添加进去
             container.addView(text_other);
+            notifyChange();
+        }
+    }
+
+
+    public void notifyChange() {
+
+        int count = container.getChildCount();
+        for (int i = 1; i < count; i++) {
+            TextView textView1 = (TextView) container.getChildAt(i);
+            if (i == selectId) {
+                textView1.setBackgroundResource(R.drawable.hscroll_shape_checked);
+            } else {
+                textView1.setBackgroundResource(R.drawable.hscroll_shape_unchecked);
+            }
+
         }
     }
 
 
     public void onItemClick(TextView textView, final int index) {
+
+
+
+
         textView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                selectId = index;
                 if (onItemClickListener != null) {
                     onItemClickListener.item(index);
+                    notifyChange();
                 }
             }
         });

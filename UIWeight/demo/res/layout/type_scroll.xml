@@ -14,4 +14,20 @@
         app:typescroller_Hspace="10dip"
         app:typescroller_Vspace="3dip" />
 
+    <com.csdn.Weight.HorizontalScrollView.TypeScroller
+        android:id="@+id/test_scoller1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:typescroller_first_left="15dip"
+        app:typescroller_Hspace="10dip"
+        app:typescroller_Vspace="3dip" />
+
+    <com.csdn.Weight.HorizontalScrollView.TypeScroller
+        android:id="@+id/test_scoller2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:typescroller_first_left="15dip"
+        app:typescroller_Hspace="10dip"
+        app:typescroller_Vspace="3dip" />
+
 </LinearLayout>

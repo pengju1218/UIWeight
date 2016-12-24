@@ -13,11 +13,15 @@ public class TypeScrollActivity extends BaseActivity implements View.OnClickList
     private String[] titles2 = {"地区", "大陆", "美国", "韩国", "日本", "中国", "中国香港", "中国台湾", "泰国", "印度", "法国", "英国", "澳大利亚", "其他"};
     private String[] titles3 = {"年代", "2017以后", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "90年代", "80年代", "70年代", "其他"};
     private com.csdn.Weight.HorizontalScrollView.TypeScroller testscoller;
+    private TypeScroller testscoller1;
+    private TypeScroller testscoller2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.type_scroll);
+        this.testscoller2 = (TypeScroller) findViewById(R.id.test_scoller2);
+        this.testscoller1 = (TypeScroller) findViewById(R.id.test_scoller1);
         this.testscoller = (TypeScroller) findViewById(R.id.test_scoller);
 
         testscoller.setTitles(titles1);
@@ -27,6 +31,27 @@ public class TypeScrollActivity extends BaseActivity implements View.OnClickList
                 showTast(i+"");
             }
         });
+
+
+        testscoller1.setTitles(titles2);
+        testscoller1.setOnItemClickListener(new TypeScroller.OnItemClickListener() {
+            @Override
+            public void item(int i) {
+                showTast(i+"");
+            }
+        });
+
+
+        testscoller2.setTitles(titles3);
+        testscoller2.setOnItemClickListener(new TypeScroller.OnItemClickListener() {
+            @Override
+            public void item(int i) {
+                showTast(i+"");
+            }
+        });
+
+
+
     }
 
     @Override
