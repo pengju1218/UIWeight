@@ -9,6 +9,8 @@ dependencies {
     compile project(':UIlib')
     // compile 'com.csdn.Weight:UIlib:1.0.2'
     compile project(':dense')
+
+    // compile 'com.github.pengju1218:UIWeight:1.0.0'
 }
 
 android {
