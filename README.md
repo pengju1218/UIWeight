@@ -1,6 +1,7 @@
 # UIWeight
 
 https://bintray.com/pengju1218
+
 添加依赖库 jcenter版本   https://bintray.com/pengju1218
 compile 'com.csdn.Weight:UIlib:1.0.3'
 
