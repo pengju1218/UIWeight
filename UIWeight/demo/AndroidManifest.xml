@@ -43,6 +43,7 @@
         <activity android:name=".activity.CropImgActivity"></activity>
         <activity android:name=".activity.HortalListView"></activity>
         <activity android:name=".activity.TypeScrollActivity"></activity>
+        <activity android:name=".activity.FipperA"></activity>
     </application>
 
 </manifest>

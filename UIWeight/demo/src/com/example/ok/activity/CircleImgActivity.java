@@ -2,6 +2,8 @@ package com.example.ok.activity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 
 import com.csdn.Weight.ImageView.RoundImageView;
@@ -34,6 +36,7 @@ public class CircleImgActivity extends BaseActivity implements View.OnClickListe
 
         ImageLoader.getInstance().displayImage(imageUrl, circleimg, options);
         imageLoader.displayImage(imageUrl,userAvater);
+
 
     }
 

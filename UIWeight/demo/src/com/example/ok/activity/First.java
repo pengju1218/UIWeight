@@ -21,7 +21,7 @@ public class First extends Activity {
             TabActivity.class, CircleImgActivity.class,
             TextKeyActivity.class, DashLineActivity.class, SlidingTabActivity.class, EmptyActivity.class,
             ToastActivity.class, TimeActivity.class,NumberImgActivity.class,
-            CropImgActivity.class,HortalListView.class,TypeScrollActivity.class
+            CropImgActivity.class,HortalListView.class,TypeScrollActivity.class,FipperA.class
 
     };
     private String[] strings = {"SizeRadio(可自定义图片大小单选按钮)",
@@ -29,7 +29,7 @@ public class First extends Activity {
             "RoundImage(下载网张图片)", "TextViewPlus(图标大小)",
             "对话框", "折叠文本", "tab标签", "圆形图片",
             "组合字体", "虚线", "滑动tab", "网络状态", "Toast自定义", "倒计时",
-            "图片角标","图片裁减","水平ListView","滑动分类"};
+            "图片角标","图片裁减","水平ListView","滑动分类","引导页"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

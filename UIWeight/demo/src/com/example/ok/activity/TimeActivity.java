@@ -33,7 +33,7 @@ public class TimeActivity extends BaseActivity implements View.OnClickListener {
 
         public int getCount() {
             // TODO Auto-generated method stub
-            return 10;
+            return 60;
         }
 
         public Object getItem(int position) {
