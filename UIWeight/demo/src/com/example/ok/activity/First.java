@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.csdn.Weight.View.CircleView;
 import com.example.ok.R;
 
 
@@ -40,6 +41,7 @@ public class First extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.first);
 
         this.listview = (ListView) findViewById(R.id.listview);

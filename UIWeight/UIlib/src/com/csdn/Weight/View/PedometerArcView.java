@@ -27,15 +27,15 @@ import com.csdn.Weight.inter.CYAnimator;
 public class PedometerArcView extends RelativeLayout implements CYAnimator {
 
 
-	private static final int a = 72;
+	private static final int a = 100;
 	private Paint b;
 	private float torusWidth = 0.0F;
 	private float d = 5.0F;
 	private float e = 4.0F;
 	private int backgroundColor = Color.parseColor("#E0E0E0");// 默认背景色
 	private int processColor = Color.parseColor("#F36C60");;//进度背景色
-	private int startIndex = 20;//进度开始位置 度数
-	private int processIndex = 50;//进度
+	private int startIndex = 0;//进度开始位置 度数
+	private int processIndex = 70;//进度
 	private int j = 0;
 	private ValueAnimator k;
 	private long showTime = 1500L;//动画执行时长
@@ -129,8 +129,8 @@ public class PedometerArcView extends RelativeLayout implements CYAnimator {
 
 	public final void b(int paramInt) {
 		int m = paramInt;
-		if (paramInt > 72) {
-			m = 72;
+		if (paramInt > a) {
+			m = a;
 		}
 		this.processIndex = m;
 		this.j = m;
@@ -160,7 +160,7 @@ public class PedometerArcView extends RelativeLayout implements CYAnimator {
 		RectF localRectF = new RectF(f1, f1, getWidth() - f1, getHeight() - f1);
 		this.b.setColor(this.backgroundColor);
 		int m = 0;
-		while (m < 72) {
+		while (m < a) {
 			paramCanvas.drawArc(localRectF, m * this.d - 90.0F, this.e, false, this.b);//
 			m += 1;
 		}
@@ -169,7 +169,7 @@ public class PedometerArcView extends RelativeLayout implements CYAnimator {
 		int i1 = this.startIndex;
 		this.b.setColor(this.processColor);
 		while (m < n + i1) {
-			paramCanvas.drawArc(localRectF, m % 72 * this.d - 90.0F, this.e, false, this.b);
+			paramCanvas.drawArc(localRectF, m % a * this.d - 90.0F, this.e, false, this.b);
 			m += 1;
 		}
 	}

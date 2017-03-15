@@ -1,14 +1,21 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-
+<!--
 
     <com.csdn.Weight.View.PedometerArcView
-
         android:layout_width="120dip"
-        android:layout_height="120dip"/>
+        android:layout_height="120dip"/>-->
+
+
+    <com.csdn.Weight.View.CircleView
+        android:id="@+id/circle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 </LinearLayout>
