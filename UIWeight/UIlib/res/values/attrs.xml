@@ -113,4 +113,19 @@
         <attr name="backgroundSelector" format="integer"/>
         <attr name="textTint" format="color"/>
     </declare-styleable>
+
+
+  <!--  <declare-styleable name="ShowPercentView">
+        <attr name="percent" format="integer"></attr>
+        <attr name="allLineColor" format="color" />
+        <attr name="percentLineColorLow" format="color" />
+        <attr name="percentLineColorHight" format="color" />
+    </declare-styleable>
+-->
+    <declare-styleable name="PedometerArcView">
+
+    </declare-styleable>
+
+
+
 </resources>
