@@ -104,8 +104,13 @@
         <attr name="typescroller_Vspace" format="dimension"></attr>
         <attr name="typescroller_Hspace" format="dimension"></attr>
         <attr name="typescroller_first_left" format="dimension"></attr>
+    </declare-styleable>
 
 
-
+    <declare-styleable name="NiceSpinner">
+        <attr name="arrowTint" format="color" />
+        <attr name="hideArrow" format="boolean" />
+        <attr name="backgroundSelector" format="integer"/>
+        <attr name="textTint" format="color"/>
     </declare-styleable>
 </resources>

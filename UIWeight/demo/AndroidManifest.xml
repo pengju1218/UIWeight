@@ -44,6 +44,7 @@
         <activity android:name=".activity.HortalListView"></activity>
         <activity android:name=".activity.TypeScrollActivity"></activity>
         <activity android:name=".activity.FipperA"></activity>
+        <activity android:name=".activity.NiceSpinnerActivity"></activity>
     </application>
 
 </manifest>
