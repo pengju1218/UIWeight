@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         // applicationId "com.yanzhenjie.andserver.sample" // 这一行要删除，因为library不允许有applicationId。
-        minSdkVersion 11
+        minSdkVersion 17
         targetSdkVersion 23
         versionCode 1
         versionName '1.0.2'
