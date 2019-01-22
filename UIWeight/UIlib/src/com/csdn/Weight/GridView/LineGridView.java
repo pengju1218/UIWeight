@@ -45,12 +45,35 @@ public class LineGridView extends GridView {
         localPaint.setColor(getContext().getResources().getColor(R.color.red));//设置画笔的颜色
         for (int i = 0; i < childCount; i++) {//遍历子view
             View cellView = getChildAt(i);//获取子view
-            if (i < 3) {//第一行
+            if (i < getNumColumns()) {//第一行
+                canvas.drawLine(cellView.getLeft(), cellView.getTop(), cellView.getRight(), cellView.getTop(), localPaint);
+            }
+            if (i % column == 0) {//第一列
+                canvas.drawLine(cellView.getLeft(), cellView.getTop(), cellView.getLeft(), cellView.getBottom(), localPaint);
+            }
+            if ((i + 1) % column == 0) {//第三列
+                //画子view底部横线
+                canvas.drawLine(cellView.getLeft(), cellView.getBottom(), cellView.getRight(), cellView.getBottom(), localPaint);
+                canvas.drawLine(cellView.getRight(), cellView.getTop(), cellView.getRight(), cellView.getBottom(), localPaint);
+            } else if ((i + 1) > (childCount - (childCount % column))) {//如果view是最后一行
+                //画子view的右边竖线
+                canvas.drawLine(cellView.getRight(), cellView.getTop(), cellView.getRight(), cellView.getBottom(), localPaint);
+                canvas.drawLine(cellView.getLeft(), cellView.getBottom(), cellView.getRight(), cellView.getBottom(), localPaint);
+            } else {//如果view不是最后一行
+                //画子view的右边竖线
+                canvas.drawLine(cellView.getRight(), cellView.getTop(), cellView.getRight(), cellView.getBottom(), localPaint);
+                //画子view的底部横线
+                canvas.drawLine(cellView.getLeft(), cellView.getBottom(), cellView.getRight(), cellView.getBottom(), localPaint);
+            }
+        }
+       /* for (int i = 0; i < childCount; i++) {//遍历子view
+            View cellView = getChildAt(i);//获取子view
+            if (i<=3) {//第一行
               //  canvas.drawLine(cellView.getLeft(), cellView.getTop(), cellView.getRight(), cellView.getTop(), localPaint);
             }
             if (i<column) {//第一列
                 canvas.drawLine(cellView.getLeft(), cellView.getTop(), cellView.getRight(), cellView.getTop(), localPaint);
-              //  canvas.drawLine(cellView.getLeft(), cellView.getTop()+1, cellView.getRight(), cellView.getTop()+1, localPaint);
+              // canvas.drawLine(cellView.getLeft(), cellView.getTop()+1, cellView.getRight(), cellView.getTop()+1, localPaint);
                 //canvas.drawLine(cellView.getRight(), cellView.getTop(), cellView.getRight(), cellView.getBottom(), localPaint);
             }
             if(i%column==0){
@@ -72,6 +95,6 @@ public class LineGridView extends GridView {
                 //画子view的底部横线
                 canvas.drawLine(cellView.getLeft(), cellView.getBottom(), cellView.getRight()+2, cellView.getBottom(), localPaint);
             }
-        }
+        }*/
     }
 }

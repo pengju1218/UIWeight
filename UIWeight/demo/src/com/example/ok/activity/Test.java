@@ -25,11 +25,6 @@ import com.csdn.Weight.Spinner.ListPopWindow;
 import com.csdn.Weight.Spinner.SpinerPopWindow;
 import com.example.ok.R;
 import com.example.ok.util.OrderUtil;
-import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
-import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
 import java.io.File;
 import java.util.ArrayList;

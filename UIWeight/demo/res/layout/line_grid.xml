@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.csdn.Weight.GridView.LineGridView
+        android:id="@+id/line_grid"
+        android:numColumns="7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

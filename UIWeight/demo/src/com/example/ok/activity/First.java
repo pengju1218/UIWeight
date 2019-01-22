@@ -8,12 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.csdn.Weight.View.CircleView;
 import com.example.ok.R;
-
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Created by Administrator on 2016/9/7.
@@ -27,7 +22,7 @@ public class First extends Activity {
             TextKeyActivity.class, DashLineActivity.class, SlidingTabActivity.class, EmptyActivity.class,
             ToastActivity.class, TimeActivity.class,NumberImgActivity.class,
             CropImgActivity.class,HortalListView.class,TypeScrollActivity.class,FipperA.class,
-            NiceSpinnerActivity.class,ShowPercentActivity.class
+            NiceSpinnerActivity.class,ShowPercentActivity.class,LineGridActivity.class,TwoHGridActivity.class
 
     };
     private String[] strings = {"SizeRadio(可自定义图片大小单选按钮)",
@@ -35,7 +30,7 @@ public class First extends Activity {
             "RoundImage(下载网张图片)", "TextViewPlus(图标大小)",
             "对话框", "折叠文本", "tab标签", "圆形图片",
             "组合字体", "虚线", "滑动tab", "网络状态", "Toast自定义", "倒计时",
-            "图片角标","图片裁减","水平ListView","滑动分类","引导页","下拉(NiceSpinner)","进度"};
+            "图片角标","图片裁减","水平ListView","滑动分类","引导页","下拉(NiceSpinner)","进度","Grid分割线","两行水平"};
 
 
     @Override

@@ -2,8 +2,6 @@ package com.example.ok.activity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.GridLayout;
 import android.widget.ImageView;
 
 import com.csdn.Weight.ImageView.RoundImageView;

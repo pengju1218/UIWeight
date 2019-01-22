@@ -24,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.TwoHGridActivity"></activity>
+        <activity android:name=".activity.LineGridActivity"></activity>
         <activity android:name=".activity.Test"></activity>
         <activity android:name=".activity.PassLenth"></activity>
         <activity android:name=".activity.TimeButtona"></activity>
