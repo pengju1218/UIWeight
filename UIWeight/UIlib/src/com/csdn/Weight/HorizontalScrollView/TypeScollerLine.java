@@ -4,8 +4,11 @@ import android.app.TabActivity;
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -15,19 +18,49 @@ import com.csdn.Weight.TextView.NewsTitleTextView;
 public class TypeScollerLine extends HorizontalScrollView  implements View.OnClickListener {
 
     private String[] types;
+    public static String SCOLLER="SCOLLER";
+    public static String  KEEPWIDTH="KEEPWIDTH";
+
+    private String Type="";
+
+    public void setType(String type) {
+        Type = type;
+    }
+
+    //获取屏幕的宽度
+    public  int getScreenWidth(Context context) {
+        WindowManager manager = (WindowManager) context
+                .getSystemService(Context.WINDOW_SERVICE);
+        Display display = manager.getDefaultDisplay();
+        return display.getWidth();
+    }
 
     public void setTypes(String[] types) {
         this.types = types;
 
+
+
+
         for(int i=0;i<types.length;i++){
             NewsTitleTextView tv=new NewsTitleTextView(getContext());
             int itemWidth = (int) tv.getPaint().measureText(types[i]);
-            tv.setLayoutParams(new LinearLayout.LayoutParams((itemWidth * 3/2),
-                    -1));
+            if(SCOLLER.equals(Type)){
+                tv.setLayoutParams(new LinearLayout.LayoutParams((itemWidth * 3/2),
+                        -1));
+                LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                mLayout.setLayoutParams(layoutParams);
+            }else if(KEEPWIDTH.equals(Type)){
+                tv.setWidth(getScreenWidth(getContext())/types.length);
+            }
+
             tv.setTextSize(20);
             tv.setPadding(0,15,0,15);
             tv.setGravity(Gravity.CENTER);
+
+
+
             tv.setText(types[i]);
+
              tv.setOnClickListener(this);
             mLayout.addView(tv);
             if (i == 0) {
@@ -68,8 +101,7 @@ public class TypeScollerLine extends HorizontalScrollView  implements View.OnCli
         this.setHorizontalScrollBarEnabled(false);
         mLayout=new LinearLayout(getContext());
         mLayout.setOrientation(LinearLayout.HORIZONTAL);
-        LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        mLayout.setLayoutParams(layoutParams);
+
         addView(mLayout);
     }
 
