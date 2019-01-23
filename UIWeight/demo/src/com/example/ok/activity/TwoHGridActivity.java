@@ -15,7 +15,7 @@ import com.example.ok.R;
 public class TwoHGridActivity extends BaseActivity {
     private LineGridView line_grid;
     DisplayMetrics dm;
-    private int NUM = 4; // 每行显示个数
+    private int NUM = 2; // 每行显示个数
     private int hSpacing = 20;// 水平间距
     private String[] strings = {"SizeRadio(可自定义图片大小单选按钮)",
             "PasswordInputView(密码长度定长)", "TimeButton(验证60s)",
@@ -38,7 +38,7 @@ public class TwoHGridActivity extends BaseActivity {
     private void initView() {
         line_grid = (LineGridView) findViewById(R.id.line_grid);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                TwoHGridActivity.this, R.layout.line_item,
+                TwoHGridActivity.this, R.layout.line_item2,
                 strings);
 
         gridView1 = (TwoHGridView) findViewById(R.id.gridView1);

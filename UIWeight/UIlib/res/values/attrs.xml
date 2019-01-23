@@ -126,6 +126,31 @@
 
     </declare-styleable>
 
+    <declare-styleable name="edit_line">
+        <attr name="edit_lineColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="imagetext">
+        <attr name="imgT_text" format="string" />
+        <attr name="imgT_img" format="reference" />
+        <attr name="imgT_top" format="dimension"></attr>
+
+        <attr name="imgT_size" format="dimension"></attr>
+        <attr name="imgT_height" format="dimension"></attr>
+        <attr name="imgT_width" format="dimension"></attr>
+        <attr name="imgT_color" format="color"></attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="tabViewAlone">
+        <attr name="tabViewAlone_UpDraw" format="reference"/>
+        <attr name="tabViewAlone_iconPadding" format="dimension"/>
+        <attr name="tabViewAlone_iconWidth" format="dimension"/>
+        <attr name="tabViewAlone_iconHeight" format="dimension"/>
+        <attr name="tabViewAlone_tab_textSize" format="dimension"/>
+    </declare-styleable>
 
 
 </resources>

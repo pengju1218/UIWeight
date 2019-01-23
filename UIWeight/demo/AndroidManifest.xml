@@ -24,6 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.TabViewAloneActivity"></activity>
+
+        <activity android:name=".activity.TypeSActivity"></activity>
+        <activity android:name=".activity.ImageTextActivity"></activity>
+        <activity android:name=".activity.LineEditActivity"></activity>
         <activity android:name=".activity.TwoHGridActivity"></activity>
         <activity android:name=".activity.LineGridActivity"></activity>
         <activity android:name=".activity.Test"></activity>

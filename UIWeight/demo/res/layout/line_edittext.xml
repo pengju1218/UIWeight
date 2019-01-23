@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activity.MainActivity">
+
+
+
+    <com.csdn.Weight.EditText.LineEditText
+        android:layout_marginTop="50dip"
+        android:id="@+id/line_edit"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        app:edit_lineColor="@color/lightcyan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:singleLine="true" />
+</LinearLayout>

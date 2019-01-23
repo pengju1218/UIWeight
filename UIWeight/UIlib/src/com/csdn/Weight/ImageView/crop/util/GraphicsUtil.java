@@ -10,11 +10,7 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
 
-/** 
-* @Description: TODO(������һ�仰��������������) 
-* @author JianTao.Young
-* @time: 2015-1-6 ����4:37:35 
-*/
+
 public class GraphicsUtil {
 
     public static Bitmap getOvalBitmap(Bitmap bitmap) {

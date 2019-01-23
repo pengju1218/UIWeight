@@ -273,11 +273,11 @@ public class NiceSpinner extends TextView {
         mPopup.showAsDropDown(this);
     }
 
-    public void setTintColor(@ColorRes int resId) {
+    /*public void setTintColor(@ColorRes int resId) {
         if (mDrawable != null) {
             DrawableCompat.setTint(mDrawable, getResources().getColor(resId));
         }
-    }
+    }*/
 
     private class FullWidthAdapter<T> extends BaseAdapter {
 

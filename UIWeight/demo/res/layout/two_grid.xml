@@ -3,8 +3,9 @@
 xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
+    android:fadeScrollbars="false"
     android:layout_height="wrap_content"
-    android:scrollbars="none"
+
     >
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -15,9 +16,11 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 
         <com.csdn.Weight.GridView.TwoHGridView
             android:id="@+id/gridView1"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:verticalSpacing="10dp"
+            android:verticalSpacing="15dip"
+            android:horizontalSpacing="15dip"
             android:stretchMode="columnWidth"
             >
         </com.csdn.Weight.GridView.TwoHGridView>
