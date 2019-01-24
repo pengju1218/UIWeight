@@ -10,7 +10,7 @@ import android.view.View;
 
 /**
  * @author JianTao.Young
- * @time: 2015-1-28 ����5:56:28
+ * @time: 2015-1-28 5:56:28
  */
 public class CircleHighlightView extends HighlightView {
 

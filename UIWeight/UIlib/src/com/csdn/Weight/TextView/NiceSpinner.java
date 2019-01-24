@@ -242,7 +242,7 @@ public class NiceSpinner extends TextView {
     }
 
     @Override
-    public boolean onTouchEvent(@NonNull MotionEvent event) {
+    public boolean onTouchEvent(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_UP) {
             if (!mPopup.isShowing()) {
                 showDropDown();

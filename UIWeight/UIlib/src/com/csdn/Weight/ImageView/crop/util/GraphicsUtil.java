@@ -40,7 +40,7 @@ public class GraphicsUtil {
 
     /**
      * @param bitmap srcͼƬ
-     * @return
+     * @return 图片
      */
     public static Bitmap getCircleBitmap(Bitmap bitmap) {
         Bitmap output = Bitmap.createBitmap( bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);

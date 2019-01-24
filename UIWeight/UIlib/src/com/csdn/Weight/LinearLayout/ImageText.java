@@ -27,12 +27,12 @@ public class ImageText extends LinearLayout {
 
     }
 
-    public ImageText(Context context, @Nullable AttributeSet attrs) {
+    public ImageText(Context context,  AttributeSet attrs) {
         super(context, attrs);
         init(context,attrs);
     }
 
-    public ImageText(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public ImageText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context,attrs);
     }

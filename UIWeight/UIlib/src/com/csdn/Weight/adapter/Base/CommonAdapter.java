@@ -10,11 +10,7 @@ import com.csdn.Weight.R;
 
 import java.util.List;
 
-/**
- * @Author: malen(qzmmdsl@sina.cn).
- * @Detail: CommonAdapter
- * @Motto: Never Give Up ！！！
- */
+
 public abstract class CommonAdapter<T> extends BaseAdapter {
 
     private List<T> mDataList;

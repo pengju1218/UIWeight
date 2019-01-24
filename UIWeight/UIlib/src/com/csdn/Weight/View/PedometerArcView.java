@@ -55,7 +55,7 @@ public class PedometerArcView extends RelativeLayout implements CYAnimator {
 		mContext = paramContext;
 		this.paramAttributeSet = paramAttributeSet;
 		inti();
-		TypedArray typedarray = mContext.obtainStyledAttributes(paramAttributeSet, R.styleable.PedometerArcView, paramInt, 0);
+		TypedArray typedarray = mContext.obtainStyledAttributes(paramAttributeSet, null, paramInt, 0);
 		this.torusWidth = typedarray.getDimensionPixelSize(0, (int) this.torusWidth);
 		this.b.setStrokeWidth(this.torusWidth);
 		this.backgroundColor = typedarray.getColor(1, this.backgroundColor);
@@ -73,7 +73,7 @@ public class PedometerArcView extends RelativeLayout implements CYAnimator {
 	}
 
 	private void a(Context paramContext, AttributeSet paramAttributeSet, int paramInt) {
-		TypedArray typedarray = paramContext.obtainStyledAttributes(paramAttributeSet, R.styleable.PedometerArcView, paramInt, 0);
+		TypedArray typedarray = paramContext.obtainStyledAttributes(paramAttributeSet, null, paramInt, 0);
 		this.torusWidth = typedarray.getDimensionPixelSize(0, (int) this.torusWidth);
 		this.b.setStrokeWidth(this.torusWidth);
 		this.backgroundColor = typedarray.getColor(1, this.backgroundColor);

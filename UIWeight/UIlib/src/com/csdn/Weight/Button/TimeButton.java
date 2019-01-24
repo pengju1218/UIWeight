@@ -93,7 +93,7 @@ public class TimeButton extends Button {
 	 * 设置到计时长度
 	 *
 	 * @param lenght 时间 默认毫秒
-	 * @return
+	 * @return 长度
 	 */
 	public TimeButton setLenght(long lenght) {
 		this.lenght = lenght;

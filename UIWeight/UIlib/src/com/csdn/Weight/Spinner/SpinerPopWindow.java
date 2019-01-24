@@ -18,13 +18,7 @@ import android.widget.TextView;
 import com.csdn.Weight.R;
 
 
-/**
- * �Զ���PopupWindow  ��Ҫ������ʾListView
- * @author Ansen
- * @param <T>
- * @param <T>
- * @create time 2015-11-3
- */
+
 public class SpinerPopWindow<T> extends PopupWindow {
 	private LayoutInflater inflater;
 	private ListView mListView;

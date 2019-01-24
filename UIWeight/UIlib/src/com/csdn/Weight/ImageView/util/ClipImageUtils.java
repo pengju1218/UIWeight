@@ -13,14 +13,14 @@ public class ClipImageUtils {
 	 * 对源位图进行剪裁
 	 * 
 	 * @param source
-	 * @param x
-	 * @param y
+	 * @param x 位置
+	 * @param y 位置
 	 * @param width
 	 *            剪裁内容的宽度
 	 * @param height
 	 *            剪裁内容的高度
-	 * @param imWidth
-	 * @param imHeight
+	 * @param imWidth 最小宽度
+	 * @param imHeight 最小高度
 	 * @return
 	 */
 	public static Bitmap clipImage(Bitmap source, int x, int y, int width,
@@ -38,8 +38,8 @@ public class ClipImageUtils {
 	 * 对源位图进行剪裁
 	 * 
 	 * @param source
-	 * @param x
-	 * @param y
+	 * @param x 位置
+	 * @param y  位置
 	 * @param width
 	 *            剪裁内容的宽度
 	 * @param height

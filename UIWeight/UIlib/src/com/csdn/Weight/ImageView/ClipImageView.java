@@ -204,7 +204,7 @@ public class ClipImageView extends ImageView {
 	/**
 	 * 获取设置在ClipImageView中的Bitmap
 	 * 
-	 * @return
+	 * @return 源图片
 	 */
 	public Bitmap getSourceBitmap() {
 		if (source != null)
@@ -223,7 +223,7 @@ public class ClipImageView extends ImageView {
 	/**
 	 * 获取ImageView对原图的缩放比例
 	 * 
-	 * @return
+	 * @return 比例
 	 */
 	public float getScale() {
 		if (getSourceBitmap() == null)
@@ -239,7 +239,7 @@ public class ClipImageView extends ImageView {
 	/**
 	 * 获取剪裁好的bitmap
 	 * 
-	 * @return
+	 * @return 获取剪裁好的bitmap
 	 */
 	public Bitmap getClippedBitmap() {
 		float scale = getScale();
@@ -255,7 +255,7 @@ public class ClipImageView extends ImageView {
 	 * 'lightgrey', 'darkgrey', 'aqua', 'fuschia', 'lime', 'maroon', 'navy',
 	 * 'olive', 'purple', 'silver', 'teal'
 	 * 
-	 * @param color
+	 * @param color 设置剪裁框边框的颜色
 	 */
 	public void setClipFrameColor(String color) {
 		mClipFramePaint.setColor(Color.parseColor(color));
@@ -301,7 +301,7 @@ public class ClipImageView extends ImageView {
 	/**
 	 * 剪裁内容的左上角X坐标
 	 * 
-	 * @return
+	 * @return 剪裁内容的左上角X坐标
 	 */
 	public float getContentX() {
 		return currX;
@@ -310,7 +310,7 @@ public class ClipImageView extends ImageView {
 	/**
 	 * 剪裁内容的左上角Y坐标
 	 * 
-	 * @return
+	 * @return 剪裁内容的左上角Y坐标
 	 */
 	public float getContentY() {
 		return currY;
@@ -319,7 +319,7 @@ public class ClipImageView extends ImageView {
 	/**
 	 * 获取剪裁内容的宽度
 	 * 
-	 * @return
+	 * @return 获取剪裁内容的宽度
 	 */
 	public int getContentWidth() {
 		return mClipFrameWidth;
@@ -328,7 +328,7 @@ public class ClipImageView extends ImageView {
 	/**
 	 * 获取剪裁内容的高度
 	 * 
-	 * @return
+	 * @return 获取剪裁内容的高度
 	 */
 	public int getContentHeight() {
 		return mClipFrameHeight;

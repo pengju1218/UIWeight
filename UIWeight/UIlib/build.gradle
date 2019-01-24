@@ -8,8 +8,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 // Your Group
 group='com.csdn.weight'
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     resourcePrefix "andserver_res_"
     lintOptions {
         abortOnError false
@@ -18,9 +18,9 @@ android {
     defaultConfig {
         // applicationId "com.yanzhenjie.andserver.sample" // 这一行要删除，因为library不允许有applicationId。
         minSdkVersion 17
-        targetSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
-        versionName '1.0.2'
+        versionName '1.0.8'
     }
 
     sourceSets {
@@ -38,12 +38,12 @@ android {
 }
 dependencies {
     // 如果你的library有依赖别的jar，这里要把jar依赖进来。
-    compile fileTree(dir: 'libs', includes: ['*.jar'])
-    compile('com.android.support:support-v4:13.0.0')
-    compile fileTree(dir: 'libs', include: '*.jar')
+    api fileTree(dir: 'libs', includes: ['*.jar'])
+    api('com.android.support:support-v4:13.0.0')
+    api fileTree(dir: 'libs', include: '*.jar')
     //compile 'com.jsoniter:jsoniter:0.9.2'
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    api 'com.android.support:appcompat-v7:25.0.0'
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     //compile files('libs/android-support-v4.jar')
     //compile fileTree(dir: 'libs', include: '*.jar')
     // compile project(':xDroid')
@@ -137,6 +137,14 @@ bintray {
     }
 }*/
 apply from: "bintray-publish.gradle"//可以给所有的moudle引入一个配置文件
-
+javadoc {
+    options{
+        encoding "UTF-8"
+        charSet 'UTF-8'
+        author true
+        version true
+        links "http://docs.oracle.com/javase/7/docs/api"
+    }
+}
 //apply from:"publish-mevean.gradle"//可以给所有的moudle引入一个配置文件
 
