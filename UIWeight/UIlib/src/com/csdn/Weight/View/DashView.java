@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.csdn.Weight.R;
 
+
 public class DashView extends View {
     private static final String TAG = "DashView";
     public static final int DEFAULT_DASH_WIDTH = 100;

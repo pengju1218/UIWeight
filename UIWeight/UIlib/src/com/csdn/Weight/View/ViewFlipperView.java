@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ViewFlipper;
 
+
 import com.csdn.Weight.R;
 import com.csdn.Weight.inter.IAdImages;
 

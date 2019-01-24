@@ -39,20 +39,9 @@ android {
         versionCode 1
         versionName "1.0"
     }
-    signingConfigs {
-        config_test {
-            keyAlias 'pengju1218'
-            keyPassword 'www6727'
-            storeFile file('C:/Users/key.jks')
-            storePassword 'www6727'
-        }
-    }
+
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config_test
-        }
+
         debug {
 
         }

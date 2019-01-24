@@ -21,7 +21,7 @@ public class ClipImageUtils {
 	 *            剪裁内容的高度
 	 * @param imWidth 最小宽度
 	 * @param imHeight 最小高度
-	 * @return
+	 * @return 图片
 	 */
 	public static Bitmap clipImage(Bitmap source, int x, int y, int width,
 			int height, int imWidth, int imHeight) {
@@ -46,7 +46,7 @@ public class ClipImageUtils {
 	 *            剪裁内容的高度
 	 * @param scale
 	 *            剪裁比例
-	 * @return
+	 * @return 图片
 	 */
 	public static Bitmap clipImage(Bitmap source, int x, int y, int width,
 			int height, float scale) {

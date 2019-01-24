@@ -8,10 +8,6 @@ import android.graphics.Rect;
 import android.graphics.Region;
 import android.view.View;
 
-/**
- * @author JianTao.Young
- * @time: 2015-1-28 5:56:28
- */
 public class CircleHighlightView extends HighlightView {
 
     public CircleHighlightView(View context) {
